@@ -3,25 +3,26 @@ let circle_y = 300;
 let circle_width;
 let circle_direction_x = 1;
 let circle_direction_y = 1;
-let button_1;
+
 
 function setup(){
-  mode = 0;
   createCanvas(windowWidth,windowHeight);
   colorPicker = createColorPicker('#9669FF');
   colorPicker.position(10,10);
+  noStroke();
+  textSize(36)
+  textFont("monospace");
   slider = createSlider(10, 250, 10, 10);
   slider.position(75, 10);
   slider.style('width', '200px');
 }
 
 function draw(){
-   let circle_width = slider.value();
+  fill(colorPicker.color());
+  let circle_width = slider.value();
   ellipse(circle_x,circle_y, circle_width,circle_width);
   circle_x = circle_x + circle_direction_x;
   circle_y = circle_y + circle_direction_y;
-  stroke(colorPicker.color());
-  fill(255);
   
   if(circle_x > width){
     circle_direction_x = -1;
@@ -74,6 +75,5 @@ function keyPressed(){
       circle_direction_x = 0;
       circle_direction_y = 0;
     }
-    
 
 }

@@ -1,8 +1,7 @@
 body {
     background-color:rgb(251, 255, 240) 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
-
 h1 {
     font-size: 48px;
     text-align: center;

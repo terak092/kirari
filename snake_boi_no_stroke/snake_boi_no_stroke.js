@@ -39,41 +39,43 @@ function draw(){
 }
 
 function keyPressed(){
-    if(key === 'a'){
-        circle_direction_x = -1;
-        circle_direction_y = 0;
-    }
-    if(key === 'd'){
-        circle_direction_x = 1;
-        circle_direction_y = 0;
-    }
-    if(key === 'w'){
-        circle_direction_x = 0;
-        circle_direction_y = -1;
-    }
-    if(key === 's'){
-        circle_direction_x = 0;
-        circle_direction_y =1;
-    }
-    if(key === 'q'){
-        circle_direction_x = -1;
-        circle_direction_y =-1;
-    }
-    if(key === 'e'){
-        circle_direction_x = 1;
-        circle_direction_y =-1;
-    }
-    if(key === 'z'){
-        circle_direction_x = -1;
-        circle_direction_y =1;
-    }
-    if(key === 'x'){
-        circle_direction_x = 1;
-        circle_direction_y =1;
-    }
-    if(key === 'p'){
-      circle_direction_x = 0;
+  if(key === 'a' || keyCode === LEFT_ARROW || key === 'A'){
+      circle_direction_x = -1;
       circle_direction_y = 0;
-    }
+  }
+  if(key === 'd' || keyCode === RIGHT_ARROW || key === 'D'){
+      circle_direction_x = 1;
+      circle_direction_y = 0;
+  }
+  if(key === 'w' || keyCode === UP_ARROW || key === 'W'){
+      circle_direction_x = 0;
+      circle_direction_y = -1;
+  }
+  if(key === 's' || keyCode === DOWN_ARROW || key === 'S'){
+      circle_direction_x = 0;
+      circle_direction_y =1;
+  }
+  if(key === 'q'){
+      circle_direction_x = -1;
+      circle_direction_y =-1;
+  }
+  if(key === 'e'){
+      circle_direction_x = 1;
+      circle_direction_y =-1;
+  }
+  if(key === 'z'){
+      circle_direction_x = -1;
+      circle_direction_y =1;
+  }
+  if(key === 'x'){
+      circle_direction_x = 1;
+      circle_direction_y =1;
+  }
+  if(key === 'p' || keyCode === ESCAPE || key === 'P'){
+    circle_direction_x = 0;
+    circle_direction_y = 0;
+  }
+  
+
 
 }

@@ -38,19 +38,19 @@ function draw(){
 }
 
 function keyPressed(){
-    if(key === 'a'){
+    if(key === 'a' || keyCode === LEFT_ARROW || key === 'A'){
         circle_direction_x = -1;
         circle_direction_y = 0;
     }
-    if(key === 'd'){
+    if(key === 'd' || keyCode === RIGHT_ARROW || key === 'D'){
         circle_direction_x = 1;
         circle_direction_y = 0;
     }
-    if(key === 'w'){
+    if(key === 'w' || keyCode === UP_ARROW || key === 'W'){
         circle_direction_x = 0;
         circle_direction_y = -1;
     }
-    if(key === 's'){
+    if(key === 's' || keyCode === DOWN_ARROW || key === 'S'){
         circle_direction_x = 0;
         circle_direction_y =1;
     }
@@ -70,7 +70,7 @@ function keyPressed(){
         circle_direction_x = 1;
         circle_direction_y =1;
     }
-    if(key === 'p'){
+    if(key === 'p' || keyCode === ESCAPE || key === 'P'){
       circle_direction_x = 0;
       circle_direction_y = 0;
     }
